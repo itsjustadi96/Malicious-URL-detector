@@ -7,7 +7,7 @@ Additional libraries used in the project (scikit-learn)
 
 Clone the Repository:
 Open your terminal and use Git to clone this repository:
-git clone https://github.com/itsjustadi96/Mal-URL.git
+git clone https://github.com/itsjustadi96/Malicious-URL-detector.git
 
 change the pathname of your dataset in prediction.py to where its located (modification from \ to / if path copied)
 
