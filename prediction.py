@@ -7,7 +7,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
 
-urls_data = pd.read_csv("C:/Users/Adith Rajeev/Desktop/college/malicious url/Data/urldata.csv")
+urls_data = pd.read_csv("urldata.csv")
 type(urls_data)
 
 urls_data.head()
