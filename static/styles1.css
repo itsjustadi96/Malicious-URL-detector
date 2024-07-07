@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.title {
+    padding-top: 285px;
+    font-size: 75px;
+    color: white;
+    font-family: 'Julius Sans One';
+}
+
+
+.button-50 {
+  appearance: button;
+  background-color: #2c3e50; /* Dark blue color */
+  background-image: none;
+  border: 1px solid #fff; /* White border */
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+
+
+.swipe {
+    position: relative;
+    background-color: white;
+    width: 345px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.35);
+    border-left: 0.5px solid rgba(0, 0, 0, 0.35);
+    padding-left: 40px;
+    cursor: pointer;
+    transition: 0.35s ease;
+    padding-left: 27px;
+    margin-left: 38%;
+    margin-top: 165px;
+}
+.swipe:hover {
+  padding-left: 0;
+  padding-right: 40px;
+  color: #324B4C;
+}
+
+.container {
+  position: absolute;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: #7AB5B7;
+  border-radius: 50%;
+  transition: 0.35s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f4f7;
+}
+
+.swipe:hover .container {
+  left: calc(100% - 55px);
+  color: #324B4C;
+}

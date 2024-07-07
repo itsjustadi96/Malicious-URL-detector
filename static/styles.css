@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  display:flex;
+}
+
+left{
+  text-align:left;
+}
+
+button {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #212121;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 65px;
+}
+
+button span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #212121;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+button span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+button span:not(hover) {
+  transition: all 1s;
+}
+
+.title1 {
+    font-size: 65px;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+    padding-left: 90px;
+  font-family: 'Julius Sans One';
+  margin:auto;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 96%;
+    margin-bottom: 10px;
+    padding: 8px;
+    margin-left: 35px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 30px;
+  margin-bottom: 25px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.left {
+    margin-right: 10%;
+    margin-left: 140px;
+}
+
+.para {
+    color: white;
+    font-family: "VT323", monospace;
+    font-style: normal;
+    font-size: 60px;
+    padding-top: 155px;
+    margin-right: 115px;
+    margin-left: 145px;
+}
+
+.para2 {
+    color: white;
+    font-family: "VT323", monospace;
+    font-style: normal;
+    font-size: 23px;
+    padding-top: 12px;
+    margin-right: 115px;
+    margin-left: 145px;
+}
+
+.pred{
+    color: white;
+    padding-left: 55px;
+    font-family: jura;
+    font-size: 40px;
+}

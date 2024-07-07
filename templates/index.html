@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=VT323&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nothing You Could Do' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "simplelightbox-master/dist/simple-lightbox.css">
+    <title>URL Predictor</title>
+</head>
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-image: url('static/images/2150533981.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* Ensure the body covers the entire viewport height */
+        margin: 0; /* Remove default margin */
+    }
+  </style>
+  
+<body>
+  <div class="left">
+    <div class="title1">URL Predictor</div>
+    <form action="/predict" method="post">
+      <input type="text" id="url" name="url" placeholder="Enter URL"><br>
+      <button>
+        <span> CHECK URL </span>
+      </button>
+    </form>
+
+    <div class="pred">
+        {% if prediction == "good" %}
+            <p>This website is safe.</p>
+        {% elif prediction == "bad" %}
+            <p>This website is unsafe.</p>
+        {% endif %}
+    </div>
+
+  </div>
+
+  <div class="right">
+    <div class="para">What is a Malicious URL? </div>
+    <div class="para2">Malicious URLs, often disguised as legitimate websites, are a common vector for cyber threats. These URLs can lead to a variety of malicious activities, including phishing attacks, malware downloads, and identity theft. When users unknowingly click on a malicious URL, they may be directed to a fake login page designed to steal their credentials, or to a site that automatically downloads malware onto their device. Malicious URLs can also be used in social engineering attacks, where attackers manipulate users into revealing sensitive information or performing actions that compromise their security. The consequences of falling victim to a malicious URL can be severe, ranging from financial loss and data breaches to complete system compromise. Therefore, it's essential for users to exercise caution when clicking on links, verify the legitimacy of URLs before visiting them, and keep their security software up to date to protect against these threats.</div>
+  </div>
+
+</body>
+</html>
